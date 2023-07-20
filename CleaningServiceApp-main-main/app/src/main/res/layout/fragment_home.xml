@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2DDED"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cleaning Service"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/serviceImageView"
+        android:layout_width="187dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cleaner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cleaning service adalah jasa yang diberikan oleh agen untuk bertugas membersihkan ruangan kantor, apartemen, atau tempat – tempat umum.Menggunakan jasa kebersihan merupakan alternatif solusi paling praktis dan tepat untuk menjaga kondisi bangunan agar tetap bersih dan nyaman. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceImageView" />
+
+    <TextView
+        android:id="@+id/otherServicesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jenis cleaning Service"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+    <ImageView
+        android:id="@+id/service1ImageView"
+        android:layout_width="95dp"
+        android:layout_height="86dp"
+        android:src="@drawable/house"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otherServicesTextView" />
+
+    <TextView
+        android:id="@+id/service1TextView"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Home Cleaning
+Jasa kebersihan yang ditujukan khusus untuk hunian pribadi."
+        app:layout_constraintStart_toEndOf="@id/service1ImageView"
+        app:layout_constraintTop_toTopOf="@id/service1ImageView" />
+
+    <ImageView
+        android:id="@+id/service2ImageView"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/office"
+        app:layout_constraintTop_toBottomOf="@+id/otherServicesTextView"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/service2TextView"
+        android:layout_width="247dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="General Cleaning
+Jenis general cleaning adalah layanan yang digunakan pada suatu waktu tertentu. jasa kebersihan hanya digunakan saat dibutuhkan saja."
+        app:layout_constraintStart_toEndOf="@id/service2ImageView"
+        app:layout_constraintTop_toTopOf="@id/service2ImageView" />
+
+    <Button
+        android:id="@+id/addOrderButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0D2039"
+        android:text="Add Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service2ImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
